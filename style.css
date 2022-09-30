@@ -31,6 +31,7 @@ html {
   justify-content: center;
   align-items: center;
   margin-top: 17px;
+  margin-bottom: 20px;
 }
 .left__information__title {
   height: 45px;
@@ -61,6 +62,7 @@ html {
   align-items: center;
   justify-content: flex-end;
   position: relative;
+  margin-bottom: 30px;
 }
 .left__details__image {
   display: flex;
@@ -121,6 +123,7 @@ html {
 .left__contact {
   width: 231px;
   height: 211px;
+  margin-bottom: 30px;
 }
 .left__contact__container {
   margin: 0 10px;
@@ -137,6 +140,9 @@ html {
 }
 .left__contact__container:last-child {
   margin-bottom: 0px;
+}
+.left__contact__container > :first-child {
+  margin-right: 17px;
 }
 .left__contact__image {
 }
@@ -155,6 +161,10 @@ html {
   height: 20px;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 15px;
+}
+.left__language__container:last-child {
+  margin-bottom: 0;
 }
 .left__language__title {
   width: 93px;
@@ -166,6 +176,7 @@ html {
   line-height: 19px;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 17px;
 }
 .left__language__small__title {
   width: 58px;
@@ -204,9 +215,10 @@ html {
   border-radius: 5px;
   padding-left: 14px;
 }
-.right__education {
+.right__education,
+.right__experience {
   width: 286px;
-  height: 227px;
+  margin-bottom: 20px;
 }
 .right__education:first-child {
   margin-top: 22px;
@@ -241,8 +253,11 @@ html {
   background: #2c8598;
   border: 2px solid #2c8598;
 }
+.right__education__container {
+  margin-top: 9px;
+}
+
 .right__education__small__title {
-  width: 256px;
   height: 16px;
   font-family: "Roboto";
   font-style: normal;
@@ -251,9 +266,9 @@ html {
   line-height: 16px;
   text-transform: capitalize;
   color: #000000;
+  margin-bottom: 3px;
 }
 .right__education__sub__title {
-  width: 92px;
   height: 16px;
   font-family: "Roboto";
   font-style: normal;
@@ -262,6 +277,7 @@ html {
   line-height: 16px;
   text-transform: capitalize;
   color: #2c8598;
+  margin-bottom: 4px;
 }
 .right__education__data {
   width: 272px;
@@ -273,6 +289,9 @@ html {
   line-height: 16px;
   text-transform: capitalize;
   color: #847d7d;
+}
+.right__experience__invisible__bar {
+  height: 16px;
 }
 .right__skill {
   width: 286px;
@@ -291,11 +310,23 @@ html {
   display: flex;
   justify-content: space-around;
 }
+.right__skill__wrapper__relative {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .right__skill__wrapper__border {
+  width: 100%;
+  height: 100%;
+  position: absolute;
   border: 2.5625px solid;
   border-radius: 50%;
   border-color: #2c8598 transparent #2c8598 #2c8598;
-  padding: 5px;
+  top: 0;
+  left: 0px;
 }
 .right__hobbies {
   display: flex;
@@ -303,15 +334,16 @@ html {
 }
 .right__hobbies__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .right__hobbies__wrapper {
+  margin-top: 12px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.right__hobbies__image {
-  width: 25px;
-  height: 25px;
+.right__hobbies__wrapper > svg {
+  margin-bottom: 8px;
 }
 .right__hobbies__data {
   height: 12px;
