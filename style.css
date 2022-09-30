@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  font-family: "Roboto";
+  font-style: normal;
 }
 html {
   display: flex;
@@ -72,7 +74,13 @@ html {
   align-items: center;
 }
 .left__details__image__removed {
-  width: 56%;
+  width: 65%;
+  height: 26px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  text-transform: uppercase;
 }
 .left__details__data {
   width: 250px;
