@@ -16,12 +16,7 @@ html {
   background: linear-gradient(180deg, #27222f 0%, #2c8598 100%);
 }
 .left {
-  position: absolute;
-  width: 250px;
-  height: 832px;
-  left: 7px;
-  top: 5px;
-
+  margin: 5px 6px 5px 7px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
 }
@@ -35,8 +30,6 @@ html {
 }
 .left__information__title {
   height: 45px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 45px;
@@ -45,10 +38,8 @@ html {
 }
 .left__information__description {
   height: 17px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
-  font-size: 14.4811px;
+  font-size: 14.5px;
   line-height: 17px;
   text-align: center;
   text-transform: uppercase;
@@ -97,10 +88,8 @@ html {
 }
 .left__details__data__title {
   height: 17px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
-  font-size: 14.4811px;
+  font-size: 14.5px;
   line-height: 17px;
   text-align: center;
   text-transform: uppercase;
@@ -111,8 +100,6 @@ html {
   margin-bottom: 16px;
   width: 223px;
   height: 75px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
@@ -144,8 +131,6 @@ html {
 .left__contact__container > :first-child {
   margin-right: 17px;
 }
-.left__contact__image {
-}
 .left__contact__data {
   color: #ffffff;
 }
@@ -169,8 +154,6 @@ html {
 .left__language__title {
   width: 93px;
   height: 19px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -181,8 +164,6 @@ html {
 .left__language__small__title {
   width: 58px;
   height: 16px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -205,12 +186,9 @@ html {
   background-color: #ffffff;
 }
 .right {
-  position: absolute;
   width: 328px;
   height: 832px;
-  left: 263px;
-  top: 5px;
-
+  margin-top: 5px;
   background: #ffffff;
   border-radius: 5px;
   padding-left: 14px;
@@ -239,8 +217,6 @@ html {
 .right__education__title {
   width: 88px;
   height: 19px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -259,8 +235,6 @@ html {
 
 .right__education__small__title {
   height: 16px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -270,8 +244,6 @@ html {
 }
 .right__education__sub__title {
   height: 16px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -282,8 +254,6 @@ html {
 .right__education__data {
   width: 272px;
   height: 48px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -307,8 +277,13 @@ html {
   justify-content: space-evenly;
 }
 .right__skill__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.right__skill__container__all {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
 }
 .right__skill__wrapper__relative {
   position: relative;
@@ -322,11 +297,27 @@ html {
   width: 100%;
   height: 100%;
   position: absolute;
-  border: 2.5625px solid;
+  border: 2.5px solid;
   border-radius: 50%;
-  border-color: #2c8598 transparent #2c8598 #2c8598;
   top: 0;
   left: 0px;
+}
+.right__skill__wrapper__background {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #f0ecec;
+}
+.right__skill__data {
+  height: 12px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: capitalize;
+  color: #847d7d;
 }
 .right__hobbies {
   display: flex;
@@ -347,27 +338,52 @@ html {
 }
 .right__hobbies__data {
   height: 12px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 10px;
   line-height: 12px;
   text-transform: capitalize;
   color: #847d7d;
 }
-
-.circle {
-  width: 50px;
-  height: 50px;
-  border: 5px solid;
-  border-radius: 50%;
-  animation: spin 2s linear;
+.photoshop {
+  border-color: transparent #2c8598 #2c8598 #2c8598;
+  transform: rotate(50deg);
+  animation: spinPhoto 1s linear;
 }
-@keyframes spin {
-  100% {
+.illustrator {
+  border-color: #2c8598 #2c8598 transparent #2c8598;
+  transform: rotate(50deg);
+  animation: spinPhoto 1s linear;
+}
+.inDesign {
+  border-color: #2c8598 #2c8598 #2c8598 transparent;
+  animation: spinInD 1s linear;
+}
+.XD {
+  border-color: #2c8598 transparent #2c8598 #2c8598;
+  transform: rotate(10deg);
+  animation: spinXD 1s linear;
+}
+@keyframes spinPhoto {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(410deg);
+  }
+}
+@keyframes spinInD {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
     transform: rotate(360deg);
   }
 }
-.photoshop {
-  border-color: red transparent transparent transparent;
+@keyframes spinXD {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(370deg);
+  }
 }
